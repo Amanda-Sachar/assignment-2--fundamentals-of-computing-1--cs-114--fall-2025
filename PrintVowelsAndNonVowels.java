@@ -26,12 +26,13 @@ public class PrintVowelsAndNonVowels {
         else if (stringLeftOver.charAt(0)=='u'){
           ++uCounter;
         }
-  stringLeftOver= stringLeftOver.substring(1);
+    stringLeftOver= stringLeftOver.substring(1);}
+    if(stringLeftOver.length()>=0){
   System.out.println("a="+aCounter+"     e="+eCounter     +"     i="+iCounter+
       "     o="+oCounter+"     u="+uCounter);
   System.out.println("the amount of non-vowels and/or not lowercase characters is:"+ (stringGiven.length()-
       (aCounter+eCounter+iCounter+oCounter+uCounter)) );
-      }
+    }
     scan.close();
   }
 }
