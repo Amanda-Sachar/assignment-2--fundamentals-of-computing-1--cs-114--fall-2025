@@ -3,10 +3,13 @@ import java.util.Scanner;
 public class TheTwelveDaysOfChristmas {
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
+
     System.out.println("Please enter the day of Christmas:");
+
     int day= scan.nextInt();
-    //java.util.ArrayList<String> Gifts = new java.util.ArrayList<String>();
+
     String Poem="\n";
+
     switch (day) {
       case 12: Poem +="Twelve drummers drumming, \n";
       case 11: Poem +="Eleven pipers piping, \n";
@@ -22,13 +25,15 @@ public class TheTwelveDaysOfChristmas {
       case 1: Poem +="A partridge in a pear tree";
 
 break;
-default:
+
+    default:
       System.out.println("Invalid Day Entered");
     };
+
     if (day==1){
       System.out.println("On the "+day+"st day of Christmas my true love gave to me "+
-    Poem);}
-    else if (day==2){
+    Poem);
+    }else if (day==2){
       System.out.println("On the "+day+"nd day of Christmas my true love gave to me "+
     Poem);
     }else if (day==3){
@@ -36,6 +41,7 @@ default:
     }else if (day>0&&day<13){
       System.out.println("On the "+day+"th day of Christmas my true love gave to me "+Poem);
     }
+
     scan.close();
   }
 }
