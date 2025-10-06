@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class PrintVowelsAndNonVowels {
   public static void main(String[] args) {
     System.out.println("Please type a string:");
