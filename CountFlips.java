@@ -6,12 +6,12 @@ public class CountFlips {
     int headCounter=0;
     int flipResult;
 
-    for (timesRan=0; timesRan<100;){
+    for (timesRan=0; timesRan<100;timesRan++){
       flipResult=(int) (Math.random() * 2);
       if (flipResult==0){
         ++headCounter;
       }
-      ++timesRan;
+
     }
 /*I know I should have used Coin.java for this but I was having
  * difficulty figuring out how to use it here. So I ended up
