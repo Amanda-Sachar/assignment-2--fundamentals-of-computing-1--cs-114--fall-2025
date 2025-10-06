@@ -30,8 +30,8 @@ public class PrintVowelsAndNonVowels {
     stringLeftOver = stringLeftOver.substring(1);
   }
     if(stringLeftOver.length() >= 0){
-      System.out.println("a=" + aCounter + "     e=" + eCounter +
-      "     i=" + iCounter + "     o=" + oCounter + "     u=" + uCounter);
+      System.out.println("\n a=" + aCounter + "\n e=" + eCounter +
+      "\n i=" + iCounter + "\n o=" + oCounter + "\n u=" + uCounter+"\n");
 
       System.out.println("the amount of non-vowels and/or uppercase vowels:" +
       (stringGiven.length() - (aCounter + eCounter + iCounter +
